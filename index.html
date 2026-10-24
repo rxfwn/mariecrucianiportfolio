@@ -87,6 +87,8 @@ a.proj:hover h3 { color: var(--accent) }
 .tags { display: flex; flex-wrap: wrap; gap: 6px }
 .tag { font: 11px var(--font-label); border: 1px solid var(--line); border-radius: 99px; padding: 2px 8px; color: var(--muted) }
 
+.tag.soon { color: var(--accent); border-color: var(--accent) }
+
 /* Parcours */
 .two { display: grid; gap: 32px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)) }
 .timeline { list-style: none; margin: 0; padding: 0; display: grid; gap: 0 }
@@ -121,8 +123,7 @@ footer .wrap { padding-block: 24px; font: 12px var(--font-label); color: var(--m
       <a href="#typo">Typo</a>
       <a href="#pub">Pub</a>
       <a href="#poster">Poster</a>
-      <a href="#site-web">Site web</a>
-      <a href="#planner">Planner</a>
+      <a href="#site-web">Sites web</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -292,40 +293,19 @@ footer .wrap { padding-block: 24px; font: 12px var(--font-label); color: var(--m
     </div>
   </section>
 
-  <!-- 10. Site web -->
+  <!-- 10. Sites web -->
   <section class="block" id="site-web">
     <div class="wrap">
       <div class="head">
         <span class="eyebrow">Numérique</span>
-        <h2>Site web</h2>
+        <h2>Sites web</h2>
+        <p class="lead">Les sites et applications que j'ai conçus et développés.</p>
       </div>
-      <div class="feature">
-        <div class="ph wide">Capture d'écran du site</div>
-        <div>
-          <h3>Nom du site</h3>
-          <p>Pour qui, ce que tu as fait (design, intégration, contenu) et avec quels outils.</p>
-          <div class="tags"><span class="tag">Outil</span><span class="tag">Année</span></div>
-          <div class="cta"><a class="btn" href="#site-web">Voir le site</a></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 11. Prison Architect Planner -->
-  <section class="block" id="planner">
-    <div class="wrap">
-      <div class="head">
-        <span class="eyebrow">Numérique</span>
-        <h2>Prison Architect Planner</h2>
-      </div>
-      <div class="feature">
-        <div class="ph wide">Capture du planner</div>
-        <div>
-          <h3>Un outil pour planifier ses prisons</h3>
-          <p>Ce que fait le planner, pourquoi tu l'as créé, et comment il fonctionne. Tu peux ajouter un lien pour l'essayer.</p>
-          <div class="tags"><span class="tag">Outil</span><span class="tag">Année</span></div>
-          <div class="cta"><a class="btn" href="#planner">Essayer le planner</a></div>
-        </div>
+      <div class="grid">
+        <article class="card"><div class="ph wide">Capture de Shrimply</div><h3>Shrimply</h3><p>Description du projet à venir.</p><div class="tags"><span class="tag soon">Bientôt en ligne</span></div></article>
+        <article class="card"><div class="ph wide">Capture de Prison Architect Planner</div><h3>Prison Architect Planner</h3><p>Un outil pour planifier ses prisons dans le jeu Prison Architect.</p><div class="tags"><span class="tag soon">Bientôt en ligne</span></div></article>
+        <article class="card"><div class="ph wide">Capture de Ours</div><h3>Ours</h3><p>Description du projet à venir.</p><div class="tags"><span class="tag soon">Bientôt en ligne</span></div></article>
+        <article class="card"><div class="ph wide">Capture de PokéClicker</div><h3>PokéClicker</h3><p>Description du projet à venir.</p><div class="tags"><span class="tag soon">Bientôt en ligne</span></div></article>
       </div>
     </div>
   </section>
